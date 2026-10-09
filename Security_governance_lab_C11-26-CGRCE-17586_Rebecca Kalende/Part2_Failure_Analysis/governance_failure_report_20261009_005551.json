@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-10-09T00:55:51.760140",
+  "failures": [
+    {
+      "category": "Patch Management",
+      "description": "Vulnerability identified: Apache Struts2 S2-045 (CVE-2017-5638)",
+      "severity": "Critical",
+      "impact": "Potential exposure to exploitation",
+      "recommendation": "Update to Struts 2.3.32 or Struts 2.5.10.1"
+    },
+    {
+      "category": "Patch Management",
+      "description": "Vulnerability identified: MySQL using default credentials",
+      "severity": "High",
+      "impact": "Potential exposure to exploitation",
+      "recommendation": "Change default credentials and restrict access"
+    },
+    {
+      "category": "Incident Detection",
+      "description": "The Struts simulation returned its expected vulnerability marker.",
+      "impact": "The application condition requires investigation and detection-control validation.",
+      "recommendation": "Review monitoring and alerting coverage, then validate whether the event would be detected."
+    },
+    {
+      "category": "Policy Implementation",
+      "description": "The patch-management policy exists, but the baseline status does not record Struts as patched.",
+      "impact": "The policy may not be operating effectively.",
+      "recommendation": "Assign remediation ownership, deadlines and management escalation for critical vulnerabilities."
+    },
+    {
+      "category": "Vulnerability Management",
+      "description": "A critical vulnerability was recorded in the baseline assessment.",
+      "impact": "Potential exploitation of the vulnerable service.",
+      "recommendation": "Prioritise remediation and independently retest."
+    },
+    {
+      "category": "Metrics and Measurement",
+      "description": "The recorded patch-compliance metric is below target.",
+      "impact": "Remediation performance requires management attention.",
+      "recommendation": "Track overdue items, assign accountable owners and report exceptions."
+    },
+    {
+      "category": "Security Architecture",
+      "description": "Baseline patch status does not record network segmentation controls as implemented.",
+      "impact": "Potential for lateral movement between services.",
+      "recommendation": "Apply least-privilege network restrictions and verify permitted and denied connections."
+    },
+    {
+      "category": "Authentication and Access Control",
+      "description": "Baseline patch status does not record MySQL security configuration as implemented.",
+      "impact": "Default credentials may permit unauthorised access.",
+      "recommendation": "Replace default credentials and review database permissions and network exposure."
+    }
+  ],
+  "summary": {
+    "total_failures": 8,
+    "categories": {
+      "Patch Management": 2,
+      "Incident Detection": 1,
+      "Policy Implementation": 1,
+      "Vulnerability Management": 1,
+      "Metrics and Measurement": 1,
+      "Security Architecture": 1,
+      "Authentication and Access Control": 1
+    }
+  }
+}

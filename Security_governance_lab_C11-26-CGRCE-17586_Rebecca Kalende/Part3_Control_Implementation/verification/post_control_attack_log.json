@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-10-09T02:03:13.079598",
+  "attack_type": "Struts S2-045 lab simulation",
+  "target": "local web_server on port 8080",
+  "success": true,
+  "simulation_only": true,
+  "result": "Vulnerability marker observed",
+  "http_status": 200,
+  "data_accessed": "Simulated customer_data database",
+  "records_affected": 3
+}

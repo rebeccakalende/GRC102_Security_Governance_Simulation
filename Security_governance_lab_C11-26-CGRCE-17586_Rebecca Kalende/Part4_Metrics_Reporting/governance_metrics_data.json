@@ -1,0 +1,104 @@
+{
+  "generated_at": "2026-10-09T02:25:12.395965",
+  "data_note": "Trend values are illustrative training data, not actual organisational measurements.",
+  "illustrative_trends": {
+    "patch_compliance": {
+      "name": "Patch Compliance",
+      "values": [
+        72,
+        76,
+        78,
+        81,
+        83,
+        85
+      ],
+      "target": 95,
+      "unit": "%"
+    },
+    "vulnerability_remediation": {
+      "name": "Vulnerability Remediation Time",
+      "values": [
+        15,
+        14,
+        13,
+        13,
+        12,
+        12
+      ],
+      "target": 7,
+      "unit": "days"
+    },
+    "security_incidents": {
+      "name": "Security Incidents",
+      "values": [
+        3,
+        2,
+        2,
+        3,
+        2,
+        1
+      ],
+      "target": 0,
+      "unit": "incidents"
+    },
+    "monitoring_coverage": {
+      "name": "Security Monitoring Coverage",
+      "values": [
+        60,
+        65,
+        68,
+        70,
+        73,
+        75
+      ],
+      "target": 95,
+      "unit": "%"
+    },
+    "policy_compliance": {
+      "name": "Policy Compliance",
+      "values": [
+        75,
+        79,
+        80,
+        84,
+        86,
+        88
+      ],
+      "target": 95,
+      "unit": "%"
+    }
+  },
+  "verified_lab_findings": [
+    {
+      "issue": "Apache Struts S2-045",
+      "severity": "Critical",
+      "status": "Open - retest unsuccessful",
+      "evidence": "The post-control scanner still reports the critical finding, and the lab check still returns its vulnerability marker."
+    },
+    {
+      "issue": "MySQL default root credentials",
+      "severity": "High",
+      "status": "Open - remediation not verified",
+      "evidence": "The configured default root password was still accepted by the database during technical verification."
+    },
+    {
+      "issue": "Web-to-database connectivity",
+      "severity": "Review required",
+      "status": "Connectivity confirmed",
+      "evidence": "The web container could reach database TCP port 3306."
+    },
+    {
+      "issue": "Network segmentation assessment",
+      "severity": "Inconclusive",
+      "status": "Further testing required",
+      "evidence": "The scanner's network check encountered a UTF-8 decoding error."
+    }
+  ],
+  "chart_files": {
+    "patch_compliance": "patch_compliance.png",
+    "vulnerability_remediation": "vulnerability_remediation.png",
+    "security_incidents": "security_incidents.png",
+    "monitoring_coverage": "monitoring_coverage.png",
+    "policy_compliance": "policy_compliance.png"
+  }
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Security Governance Executive Dashboard</title>
+<style>
+body { font-family: Arial, sans-serif; max-width: 1150px;
+       margin: 30px auto; padding: 0 18px; color: #243247; }
+header { background: #183b63; color: white; padding: 22px; }
+h2 { margin-top: 32px; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px; text-align: left; border: 1px solid #ccd4df; }
+th { background: #e9eef5; }
+section { margin: 24px 0; padding: 14px; border: 1px solid #d6dde7; }
+img { max-width: 100%; height: auto; }
+.note { background: #f5f2e8; padding: 12px; }
+</style>
+</head>
+<body>
+<header>
+<h1>Security Governance Executive Dashboard</h1>
+<p>Generated: 2026-10-09T02:25:12.395965</p>
+</header>
+
+<div class="note">
+<strong>Assurance status:</strong> Critical and high-severity findings
+remain unresolved or unverified. Simulated patch flags are not proof
+of technical remediation.
+</div>
+
+<h2>Verified Laboratory Findings</h2>
+<table>
+<thead><tr><th>Issue</th><th>Severity</th><th>Status</th>
+<th>Evidence</th></tr></thead>
+<tbody><tr><td>Apache Struts S2-045</td><td>Critical</td><td>Open - retest unsuccessful</td><td>The post-control scanner still reports the critical finding, and the lab check still returns its vulnerability marker.</td></tr><tr><td>MySQL default root credentials</td><td>High</td><td>Open - remediation not verified</td><td>The configured default root password was still accepted by the database during technical verification.</td></tr><tr><td>Web-to-database connectivity</td><td>Review required</td><td>Connectivity confirmed</td><td>The web container could reach database TCP port 3306.</td></tr><tr><td>Network segmentation assessment</td><td>Inconclusive</td><td>Further testing required</td><td>The scanner's network check encountered a UTF-8 decoding error.</td></tr></tbody>
+</table>
+
+<h2>Illustrative Metrics Trends</h2>
+<p>The charts below demonstrate a possible reporting format using
+illustrative training data. They do not represent measured company
+performance or prove that controls improved.</p>
+<section><h3>Patch Compliance</h3><img src='metrics_visualizations/patch_compliance.png' alt='Patch Compliance trend'><p><em>Illustrative trend data, not verified organisational measurements.</em></p></section><section><h3>Vulnerability Remediation Time</h3><img src='metrics_visualizations/vulnerability_remediation.png' alt='Vulnerability Remediation Time trend'><p><em>Illustrative trend data, not verified organisational measurements.</em></p></section><section><h3>Security Incidents</h3><img src='metrics_visualizations/security_incidents.png' alt='Security Incidents trend'><p><em>Illustrative trend data, not verified organisational measurements.</em></p></section><section><h3>Security Monitoring Coverage</h3><img src='metrics_visualizations/monitoring_coverage.png' alt='Security Monitoring Coverage trend'><p><em>Illustrative trend data, not verified organisational measurements.</em></p></section><section><h3>Policy Compliance</h3><img src='metrics_visualizations/policy_compliance.png' alt='Policy Compliance trend'><p><em>Illustrative trend data, not verified organisational measurements.</em></p></section>
+</body>
+</html>
